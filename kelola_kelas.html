@@ -111,14 +111,14 @@
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Kelola Jadwal</span></a>
             </li>
-
+            
             <!-- Heading -->
             <div class="sidebar-heading">
                 Manajemen
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="kelola_skema.html">
+                <a class="nav-link" href="akademik.html">
                     <i class="fas fa-fw fa-school "></i>
                     <span>Akademik</span></a>
             </li>
@@ -213,69 +213,99 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Detail Asesor</h1>
-                        <a href="kelola_asesor.html" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                        <h1 class="h3 mb-0 text-gray-800">Kelola Kelas</h1>
+                        <a href="akademik.html" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
                                 class="fas fa-times-circle fa-sm text-white-50 mr-2"></i>Kembali</a>
                     </div>
 
-                    <div class="d-sm-flex">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <img src="img/user.jpg" class="rounded" alt="">
+
+                    <!-- Form -->
+                    <form>
+
+
+                        <!-- Tanggal -->
+                        <div class="form-group row">
+                            <label for="Kelas" class="col-sm-2 col-form-label">Nama Kelas</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="Kelas">
                             </div>
                         </div>
-    
-                        <div class="row mt-3 ml-lg-5 ml-md-3 ml-sm-2">
-                            <div class="col-sm-2 col-lg-6 col-md-2">
-                                <table border="0">
-                                    <tr>
-                                        <th class="pt-3">Nama</th>
-                                        <td class="pl-3 pt-3">Yosua Hercules Siburian</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="pt-3">Username</th>
-                                        <td class="pl-3 pt-3">joshasesor545</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="pt-3">No. MET</th>
-                                        <td class="pl-3 pt-3">MET.000.005335 2017</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="pt-3">Kompetensi</th>
-                                        <td class="pl-3 pt-3">
-                                            <select class="form-select bg-primary text-light">
-                                                <option>Pemrograman Dasar</option>
-                                                <option>Pemrograman Berorientasi Objek</option>
-                                                <option>Pemrograman Website</option>
-                                            </select>
-                                        </td>
-                                    </tr>
 
-                                    <tr>
-                                        <th class="pt-3">TTD</th>
-                                        <td class="pl-3 pt-3">
-                                            <a href="img/ttd.png" download>Lihat</a>
-    
-                                        </td>
-                                    </tr>
-                                </table>
+
+
+                        <!-- Action -->
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+
                             </div>
-    
+                            <div class="col-sm-3 mt-4">
+                                <a href="#" style="width: 100%;"
+                                    class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                        class="fas fa-upload fa-sm text-white-50 mr-2"></i>Kirim</a>
+                            </div>
+                            <div class="col-sm-3 mt-4">
+                                <a href="akademik.html" style="width: 100%;"
+                                    class="d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                                        class="fas fa-times-circle fa-sm text-white-50 mr-2"></i>Kembali</a>
+                            </div>
                         </div>
+                    </form>
+
+
+                    <!-- Searching kelas -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Cari kelas.." aria-label="Cari kelas" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cari</button>
                     </div>
 
-                    <div class="row mt-4">
-                        <div class="col-sm-10 col-md-8 col-lg-8">
-                            <a href="asesor_update.html">
-                                <button class="btn-primary border-0 px-5 mb-2">Edit</button>
-                            </a>
-                            <a href="#">
-                                <button class="btn-danger border-0 px-5">Hapus</button>
-                            </a>
+                                        <!-- table -->
+                    <div class="table-responsive-xl">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">Nama Kelas</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>XII RPL 2</td>
 
-                        </div>
+
+                                    <td>
+                                        <a class="mr-3" href=""><i class="fas fa-edit"></i></a>
+                                        <a class="mr-3" href=""><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>XII PHT 1</td>
+
+
+                                    <td>
+                                        <a class="mr-3" href=""><i class="fas fa-edit"></i></a>
+                                        <a class="mr-3" href=""><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>XII TB 3</td>
+
+
+                                    <td>
+                                        <a class="mr-3" href=""><i class="fas fa-edit"></i></a>
+                                        <a class="mr-3" href=""><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+
                     </div>
-
                 </div>
                 <!-- /.container-fluid -->
 
